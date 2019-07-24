@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #F8F8FF;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+          transition:         transform 2s ease-in-out;
+}
+
+img:hover {
+  -webkit-transform: rotate(1800deg);
+          transform: rotate(1800deg);
+}
+
+
+.change-me {
+  width: 100vw;
+  height: 100vh;
+  animation: change 8s infinite;
+}
+
+@keyframes change {
+  0% {
+    background: #EBA0C1;
+  }
+  12.5% {
+    background:#FFB8ED;
+  }
+  25% {
+   background:#E69BE8;
+  }
+  37.5% {
+   background:#F3C8FE;
+  }
+  50% {
+   background:#DAA8FF;
+  }
+  62.5% {
+   background:#DD9BE8;
+  }
+  75% {
+   background:#C98EEB;
+  }
+  87.5% {
+   background:#AB74EB;
+  }
+  100% {
+   background:#EBA0C1;
+  }
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  color: #7B68EE;
+  margin: 20px;
+ text-shadow:
+  -1px -1px 0 white,
+   1px -1px 0 white,
+   -1px 1px 0 white,
+    1px 1px 0 white;
+    font-size: 40px;
+}
+
+h3 {
+  font-family: 'Abril Fatface', cursive;
+  color: #7B68EE;
+  margin: 10px;
+ text-shadow:
+  -1px -1px 0 white,
+   1px -1px 0 white,
+   -1px 1px 0 white,
+    1px 1px 0 white;
+    font-size: 25px;
+}
+
+.circlepics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .circlepics {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    margin: 20px;
+
+  }
+}
